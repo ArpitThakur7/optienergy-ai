@@ -1,0 +1,125 @@
+{
+  "protocol_hash": "65f05587d1015905",
+  "profile": "portfolio",
+  "protocol": {
+    "folds": 3,
+    "development_fraction": 0.8,
+    "first_validation_fraction": 0.5,
+    "embargo_hours": 24,
+    "checkpoint_fraction": 0.15,
+    "epochs": 20,
+    "seeds": [
+      7,
+      21,
+      42
+    ],
+    "bootstrap_repetitions": 1000,
+    "train_row_cap": null,
+    "evaluation_row_cap": null
+  },
+  "coverage": {
+    "causal_supervised_rows": 33885,
+    "common_support_rows": 33174,
+    "common_support_fraction": 0.9790172642762284,
+    "filter": "all features, observed target, and daily/weekly baseline available"
+  },
+  "candidates": [
+    {
+      "family": "Persistence",
+      "kind": "naive",
+      "column": "naive_persistence"
+    },
+    {
+      "family": "Daily seasonal",
+      "kind": "naive",
+      "column": "naive_daily"
+    },
+    {
+      "family": "Weekly seasonal",
+      "kind": "naive",
+      "column": "naive_weekly"
+    },
+    {
+      "family": "Trailing 24h mean",
+      "kind": "naive",
+      "column": "naive_rolling"
+    },
+    {
+      "family": "OLS",
+      "kind": "ols"
+    },
+    {
+      "family": "Ridge direct",
+      "kind": "ridge",
+      "alpha": 0.0001
+    },
+    {
+      "family": "Ridge direct",
+      "kind": "ridge",
+      "alpha": 0.001
+    },
+    {
+      "family": "Ridge direct",
+      "kind": "ridge",
+      "alpha": 0.01
+    },
+    {
+      "family": "Ridge direct",
+      "kind": "ridge",
+      "alpha": 0.1
+    },
+    {
+      "family": "Ridge / Adam",
+      "kind": "ridge_adam",
+      "lr": 0.001,
+      "alpha": 0.01
+    },
+    {
+      "family": "Ridge / Adam",
+      "kind": "ridge_adam",
+      "lr": 0.01,
+      "alpha": 0.01
+    },
+    {
+      "family": "ANN / Adam",
+      "kind": "ann_adam",
+      "lr": 0.001,
+      "alpha": 0.0
+    },
+    {
+      "family": "ANN / Adam",
+      "kind": "ann_adam",
+      "lr": 0.01,
+      "alpha": 0.0
+    },
+    {
+      "family": "Histogram boosting",
+      "kind": "histogram",
+      "lr": 0.05
+    },
+    {
+      "family": "Histogram boosting",
+      "kind": "histogram",
+      "lr": 0.1
+    }
+  ],
+  "holdout_start": "2010-02-13 02:00:00",
+  "holdout_end_target": "2010-11-26 21:00:00",
+  "holdout_rows": 6296,
+  "embargo_cutoff": "2010-02-13 02:00:00",
+  "environment": {
+    "python": "3.13.2",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.2.3",
+      "pandas": "2.2.3",
+      "scipy": "1.15.2",
+      "scikit-learn": "1.6.1",
+      "torch": "2.6.0+cu124"
+    },
+    "cpu_count": 24,
+    "torch_threads": 1
+  },
+  "selection": "mean outer validation RMSE over three calendar folds and seeds; inner checkpoint selection is separate",
+  "note": "Calendar windows are fixed by elapsed time, not by row counts; missing observations remain missing."
+}

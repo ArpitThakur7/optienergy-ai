@@ -1,0 +1,15 @@
+# Exact tested environment; CPU torch 2.6.0 is portable.
+numpy==2.2.3
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+torch==2.6.0
+streamlit==1.44.1
+plotly==6.8.0
+matplotlib==3.10.1
+joblib==1.4.2
+psutil==7.2.2
+pytest==9.0.3
+reportlab==4.5.1
+pypdf==7.1.1
+nbformat==5.10.4

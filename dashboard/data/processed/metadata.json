@@ -1,0 +1,14 @@
+{
+  "source": "https://doi.org/10.24432/C58K54",
+  "license": "CC BY 4.0; Hebrail & Berard",
+  "raw_rows": 2075259,
+  "duplicate_timestamps": 0,
+  "missing_or_invalid_minutes": 25979,
+  "missing_minute_fraction": 0.012518437457686004,
+  "hours": 34589,
+  "complete_hours": 34085,
+  "incomplete_hours": 504,
+  "schema": "complete-hours-v2",
+  "timestamp_convention": "naive local clock; right endpoint of observed hourly interval",
+  "raw_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7"
+}

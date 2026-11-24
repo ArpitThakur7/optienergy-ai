@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+OptiEnergy_Notebook_Work/
+work/
+*.joblib
+*.pkl
+data/raw/
+.env
+.DS_Store
+
+.pytest_cache/
+dashboard/results/cache/
+dashboard/results/full/
+dashboard/saved_models/
+!dashboard/results/demo/champion.joblib

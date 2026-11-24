@@ -1,0 +1,17 @@
+{
+  "champion_family": "Histogram boosting",
+  "naive_reference_family": "Persistence",
+  "deployment_seed": 7,
+  "candidate_ids": {
+    "Histogram boosting": "cf90cf021281bc57",
+    "ANN / Adam": "79864b9bdf61b588",
+    "Ridge direct": "f5b7fd1f27fbf8ed",
+    "OLS": "00366e1a61c13347",
+    "Ridge / Adam": "46d02d4f1c2efb6f",
+    "Persistence": "a3c79ac3c40a4af5",
+    "Trailing 24h mean": "126bdfaf3f7863ba",
+    "Weekly seasonal": "63fa5c412a00d3f5",
+    "Daily seasonal": "b1b41d55f3bf39c6"
+  },
+  "protocol_hash": "65f05587d1015905"
+}

@@ -1,0 +1,59 @@
+{
+  "engine_version": "2.0.0-portfolio-lab",
+  "mode": "demo",
+  "epochs": 10,
+  "max_hours": 2400,
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "data_hash": "2d6d8feb6e5caec9ae94f3eda8290337433e3423944fda848aea8d152d93ebda",
+  "dataset": {
+    "source": "https://doi.org/10.24432/C58K54",
+    "license": "CC BY 4.0; Hebrail & Berard",
+    "raw_rows": 2075259,
+    "duplicate_timestamps": 0,
+    "missing_or_invalid_minutes": 25979,
+    "missing_minute_fraction": 0.012518437457686004,
+    "hours": 34589,
+    "complete_hours": 34085,
+    "incomplete_hours": 504,
+    "schema": "complete-hours-v2",
+    "timestamp_convention": "naive local clock; right endpoint of observed hourly interval",
+    "raw_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7"
+  },
+  "environment": {
+    "python": "3.13.2",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.2.3",
+      "pandas": "2.2.3",
+      "scipy": "1.15.2",
+      "scikit-learn": "1.6.1",
+      "torch": "2.6.0+cu124"
+    },
+    "cpu_count": 24,
+    "torch_threads": 1
+  },
+  "sensitivity": true,
+  "split": {
+    "train": {
+      "rows": 1656,
+      "first_origin": "2006-12-17 19:00:00",
+      "last_origin": "2007-02-24 23:00:00"
+    },
+    "validation": {
+      "rows": 354,
+      "first_origin": "2007-02-25 01:00:00",
+      "last_origin": "2007-03-11 18:00:00"
+    },
+    "test": {
+      "rows": 356,
+      "first_origin": "2007-03-11 20:00:00",
+      "last_origin": "2007-03-26 16:00:00"
+    }
+  },
+  "protocol": "70/15/15 chronological; boundary labels purged; train-only scaling; validation-only tuning; final test once per selected model/optimizer and seed",
+  "budget": "first order: epochs*n example-gradient budget; L-BFGS: at most epochs full-data closure calls; monitoring separately counted; sklearn direct solve not budget-matched"
+}

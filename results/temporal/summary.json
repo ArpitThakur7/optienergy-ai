@@ -1,0 +1,18 @@
+{
+  "champion_family": "Histogram boosting",
+  "reference_family": "Persistence",
+  "deployment_seed": 7,
+  "holdout_rows": 6296,
+  "coverage": {
+    "causal_supervised_rows": 33885,
+    "common_support_rows": 33174,
+    "common_support_fraction": 0.9790172642762284,
+    "filter": "all features, observed target, and daily/weekly baseline available"
+  },
+  "candidate_repetitions": 69,
+  "final_repetitions": 13,
+  "ablations": 9,
+  "protocol_hash": "65f05587d1015905",
+  "tests_are_one_step": true,
+  "negative_deployment_forecasts": 0
+}

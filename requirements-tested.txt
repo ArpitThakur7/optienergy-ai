@@ -1,0 +1,16 @@
+# Versions used for the committed measured run. CPU computation only.
+numpy==2.2.3
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+torch==2.6.0
+matplotlib==3.10.1
+plotly==6.8.0
+joblib==1.4.2
+psutil==7.2.2
+threadpoolctl==3.6.0
+pillow==11.1.0
+packaging==24.2
+nbformat==5.10.4
+nbclient==0.11.0
+ipykernel==7.2.0

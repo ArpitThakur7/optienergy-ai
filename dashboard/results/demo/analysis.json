@@ -1,0 +1,36 @@
+{
+  "champion": {
+    "model": "linear",
+    "optimizer": "Momentum",
+    "config_id": "f7b4bb04c9ff5e14",
+    "val_rmse_mean": 0.5939609693290044,
+    "seeds": 3
+  },
+  "champion_seed": 7,
+  "persistence_test": {
+    "mse": 0.621940393167915,
+    "rmse": 0.7886319757452871,
+    "mae": 0.5363581460674156,
+    "r2": 0.43814901456626587
+  },
+  "gradient_check_relative_error": 1.1485921854192327e-10,
+  "hessian": {
+    "min_eigenvalue": 4.440879645371078e-15,
+    "max_eigenvalue": 12.50482963312929,
+    "numerical_rank": 26,
+    "dimension": 27,
+    "condition_number": null,
+    "positive_spectrum_condition_number": 325.92841626152557,
+    "safe_gd_lr_upper_bound": 0.15993820457188485,
+    "ridge_alpha_0.01_min_eigenvalue": 0.010000000000004672,
+    "ridge_alpha_0.01_condition_number": 1251.482963312344
+  },
+  "run_count": 126,
+  "diverged_runs": 6,
+  "cached_runs": 0,
+  "newly_trained_runs": 126,
+  "total_wall_seconds": 32.54033749999962,
+  "caveats": [
+    "Demo covers an early contiguous subset, not all four years."
+  ]
+}

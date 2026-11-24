@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.ipynb text eol=lf
+*.csv text eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.joblib binary
+*.pkl binary
